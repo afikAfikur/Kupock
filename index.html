@@ -46,25 +46,23 @@
       </div>
       <div class="flex gap-3">
         <button
-          class="bg-white text-black px-4 py-1 rounded-[10px] border border-gray-200 transition-colors hover:bg-gray-100 cursor-pointer"
+          id="faq"
+          class="bg-white text-black px-4 py-1 rounded-[10px] border border-gray-200 transition-colors hover:bg-gray-100 cursor-pointer hidden"
         >
           Faq
         </button>
 
         <button
-          class="bg-white text-black px-4 py-1 rounded-xl border border-gray-200 transition-colors hover:bg-gray-100 cursor-pointer"
-        >
-          Learn
-        </button>
-
-        <button id="logout"
+          id="logout"
           class="bg-white text-black px-4 py-1 rounded-xl border border-gray-200 transition-colors hover:bg-gray-100 cursor-pointer hidden"
         >
           Logout
         </button>
       </div>
     </div>
-    <div class="second flex flex-col lg:flex-row items-center justify-around  max-w-6xl mx-auto mt-[100px]  lg:gap-[400px]">
+    <div
+      class="second flex flex-col lg:flex-row items-center justify-around max-w-6xl mx-auto mt-[100px] lg:gap-[400px]"
+    >
       <div class="w-100 flex flex-col gap-y-4">
         <h2 class="poppins font-bold text-[42px]">
           <span class="text-blue-600">English</span> is Easy!!
@@ -75,14 +73,18 @@
             আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
             অন্য একটি Level এ
           </p>
-          <button id="start" class="font-semibold text-[16px] btn btn-primary w-fit bg-blue-600 text-white px-3 rounded-3 mt-5">Get Started</button>
-          <div id="login"
-            class="card bg-base-100 w-80 hidden  "
+          <button
+            id="start"
+            class="font-semibold text-[16px] btn btn-primary w-fit bg-blue-600 text-white px-3 rounded-3 mt-5"
           >
+            Get Started
+          </button>
+          <div id="login" class="card bg-base-100 w-80 hidden">
             <div class="form-control w-full flex flex-col gap-4">
               <label class="label">
                 <span class="label-text"
-                  >Enter Your phone/email <span class="text-secondary">*</span></span
+                  >Enter Your phone/email
+                  <span class="text-secondary">*</span></span
                 >
               </label>
               <input
@@ -102,15 +104,167 @@
                 class="input input-bordered w-full p-2"
               />
 
-              <button class="font-semibold text-[16px] btn btn-primary w-fit bg-blue-600 text-white px-3 rounded-3">Log In</button>
+              <button
+                id="login"
+                class="font-semibold text-[16px] btn btn-primary w-fit bg-blue-600 text-white px-3 rounded-3"
+              >
+                Log In
+              </button>
             </div>
           </div>
         </div>
       </div>
       <div>
-<img class="w-fit h-[400px]" src="./assets/hero-student.png" alt="">
+        <img class="w-fit h-[400px]" src="./assets/hero-student.png" alt="" />
       </div>
     </div>
+    <div
+      id="thirdsec"
+      class="hidden flex flex-col mt-[200px] third items-center justify-center max-w-6xl mx-auto"
+    >
+      <div class="mx-8">
+        <h2 class="poppins font-bold text-[42px]">
+          <span class="text-blue-600">Let's</span> Learn Vocabularies
+        </h2>
+      </div>
+      <div class="lessonbtn flex flex-col gap-y-2 lg:flex-row gap-x-4">
+        <button
+          class="bg-white border border-blue-600 px-3 w-fit rounded-[5px] text-blue-600 font-semibold text-[16px] hover:bg-blue-200"
+        >
+          Lesson-1
+        </button>
+        <button
+          class="bg-white border border-blue-600 px-3 w-fit rounded-[5px] text-blue-600 font-semibold text-[16px] hover:bg-blue-200"
+        >
+          Lesson-2
+        </button>
+        <button
+          class="bg-white border border-blue-600 px-3 w-fit rounded-[5px] text-blue-600 font-semibold text-[16px] hover:bg-blue-200"
+        >
+          Lesson-3
+        </button>
+        <button
+          class="bg-white border border-blue-600 px-3 w-fit rounded-[5px] text-blue-600 font-semibold text-[16px] hover:bg-blue-200"
+        >
+          Lesson-4
+        </button>
+        <button
+          class="bg-white border border-blue-600 px-3 w-fit rounded-[5px] text-blue-600 font-semibold text-[16px] hover:bg-blue-200"
+        >
+          Lesson-5
+        </button>
+        <button
+          class="bg-white border border-blue-600 px-3 w-fit rounded-[5px] text-blue-600 font-semibold text-[16px] hover:bg-blue-200"
+        >
+          Lesson-6
+        </button>
+        <button
+          class="bg-white border border-blue-600 px-3 w-fit rounded-[5px] text-blue-600 font-semibold text-[16px] hover:bg-blue-200"
+        >
+          Lesson-7
+        </button>
+      </div>
+      <div
+        class="selectingtext mt-5 rounded-[10px] h-[100px] mx-8 bg-gray-200 flex flex-col items-center justify-center w-full"
+      >
+        <h2 class="font-bold">আপনি এখনো কোন Lesson Select করেন ni</h2>
+        <h2 class="text-gray-600">একটি Lesson Select করুন!!</h2>
+      </div>
+    </div>
+    <div id="fourth" class="faq flex flex-col mt-[200px] third items-center justify-center hidden">
+      <div>
+        <h2 class="poppins font-bold text-[42px] max-w-6xl mx-8">
+          <span class="text-blue-600">Frequently </span> Asked Questions
+        </h2>
+      </div>
+     
+        <div class="selectingtext mt-5 rounded-[10px] h-fit bg-gray-200   px-5 py-2 gap-y-2 w-9/14 flex items-center justify-between "
+          
+        >
+          
+            <h2 class="flex items-center justify-between font-bold">
+              1.How can I start learning English on this website?
+            </h2>
+            <button id="" class="hover:bg-gray-600 rounded-xl dropdown">
+              <img src="./assets/icons8-arrow-down-30.png" alt="" />
+            </button>
+         
+
+          
+        </div>
+        <div class="selectingtext mt-5 rounded-[10px] h-fit bg-gray-200   px-5 py-2 gap-y-2 w-9/14 flex items-center justify-between "
+          
+        >
+          
+            <h2 class="flex items-center justify-between font-bold">
+              2.Is this website free to use?
+            </h2>
+            <button id="" class="hover:bg-gray-600 rounded-xl dropdown">
+              <img src="./assets/icons8-arrow-down-30.png" alt="" />
+            </button>
+         
+
+          
+        </div>
+        <div class="selectingtext mt-5 rounded-[10px] h-fit bg-gray-200   px-5 py-2 gap-y-2 w-9/14 flex items-center justify-between "
+          
+        >
+          
+            <h2 class="flex items-center justify-between font-bold">
+             3.Do I need to create an account?
+            </h2>
+            <button id="" class="hover:bg-gray-600 rounded-xl dropdown">
+              <img src="./assets/icons8-arrow-down-30.png" alt="" />
+            </button>
+         
+
+          
+        </div>
+        <div class="selectingtext mt-5 rounded-[10px] h-fit bg-gray-200   px-5 py-2 gap-y-2 w-9/14 flex items-center justify-between "
+          
+        >
+          
+            <h2 class="flex items-center justify-between font-bold">
+             4.How can I build my English vocabulary?
+            </h2>
+            <button id="" class="hover:bg-gray-600 rounded-xl dropdown">
+              <img src="./assets/icons8-arrow-down-30.png" alt="" />
+            </button>
+         
+
+          
+        </div>
+        <div class="selectingtext mt-5 rounded-[10px] h-fit bg-gray-200   px-5 py-2 gap-y-2 w-9/14 flex items-center justify-between "
+          
+        >
+          
+            <h2 class="flex items-center justify-between font-bold">
+             5.Do you offer certificates for completed courses?
+            </h2>
+            <button id="" class="hover:bg-gray-600 rounded-xl dropdown">
+              <img src="./assets/icons8-arrow-down-30.png" alt="" />
+            </button>
+         
+
+          
+        </div>
+       
+     
+      
+      
+    </div>
+    <footer id="footer" class="hidden h-[200px] bg-gray-200 mt-[200px] flex items-center justify-between px-[200px] ">
+<div>
+  <h2 class="font-semibold text-[24px] text-gray-900">Build and Deployed by Afik</h2>
+</div>
+<div class="flex flex-col gap-2">
+ <h2>Contacts</h2>
+ <div class="flex  gap-2"><img src="./assets/fb-thumb.png" alt="">
+ <img src="./assets/instagram-thumb.png" alt="">
+ <img src="./assets/youtube-thumb.png" alt=""></div>
+ 
+</div>
+    </footer>
     <script src="./script/index.js"></script>
   </body>
 </html>
