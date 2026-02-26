@@ -129,6 +129,7 @@
       </div>
       <div class="lessonbtn flex flex-col gap-y-2 lg:flex-row gap-x-4">
         <button
+          id="level1"
           class="bg-white border border-blue-600 px-3 w-fit rounded-[5px] text-blue-600 font-semibold text-[16px] hover:bg-blue-200"
         >
           Lesson-1
@@ -171,6 +172,18 @@
         <h2 class="text-gray-600">একটি Lesson Select করুন!!</h2>
       </div>
     </div>
+    <!-- card section starts -->
+    <div id="cardsec"
+      class="hidden cardsec drop-shadow-lg bg-gray-200 h-fit p-[30px] mt-[90px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-9/12 mx-auto justify-items-center rounded-xl"
+    >
+      
+
+      
+
+     
+      
+      
+    </div>
     <div
       id="fourth"
       class="faq flex flex-col mt-[200px] third items-center justify-center hidden"
@@ -180,63 +193,83 @@
           <span class="text-blue-600">Frequently </span> Asked Questions
         </h2>
       </div>
+      <div
+        class="mt-5 rounded-[10px] h-fit bg-gray-200 px-5 py-2 gap-y-2 w-9/14"
+      >
+        <div
+          id="firstq"
+          class="selectingtext flex items-center justify-between"
+        >
+          <h2 class="flex items-center justify-between font-bold">
+            1.How can I start learning English on this website?
+          </h2>
+          <button id="how" class="hover:bg-gray-600 rounded-xl dropdown">
+            <img src="./assets/icons8-arrow-down-30.png" alt="" />
+          </button>
+        </div>
+        <div id="ans"></div>
+      </div>
 
       <div
-        class="selectingtext mt-5 rounded-[10px] h-fit bg-gray-200 px-5 py-2 gap-y-2 w-9/14 flex items-center justify-between"
+        class="mt-5 rounded-[10px] h-fit bg-gray-200 px-5 py-2 gap-y-2 w-9/14"
       >
-        <h2 class="flex items-center justify-between font-bold">
-          1.How can I start learning English on this website?
-        </h2>
-        <button id="" class="hover:bg-gray-600 rounded-xl dropdown">
-          <img src="./assets/icons8-arrow-down-30.png" alt="" />
-        </button>
+        <div id="" class="selectingtext flex items-center justify-between">
+          <h2 class="flex items-center justify-between font-bold">
+            2.Is this website free to use?
+          </h2>
+          <button id="secbtn" class="hover:bg-gray-600 rounded-xl dropdown">
+            <img src="./assets/icons8-arrow-down-30.png" alt="" />
+          </button>
+        </div>
+        <div id="ans1"></div>
       </div>
+
       <div
-        class="selectingtext mt-5 rounded-[10px] h-fit bg-gray-200 px-5 py-2 gap-y-2 w-9/14 flex items-center justify-between"
+        class="mt-5 rounded-[10px] h-fit bg-gray-200 px-5 py-2 gap-y-2 w-9/14"
       >
-        <h2 class="flex items-center justify-between font-bold">
-          2.Is this website free to use?
-        </h2>
-        <button id="" class="hover:bg-gray-600 rounded-xl dropdown">
-          <img src="./assets/icons8-arrow-down-30.png" alt="" />
-        </button>
+        <div id="" class="selectingtext flex items-center justify-between">
+          <h2 class="flex items-center justify-between font-bold">
+            3.Do I need to create an account?
+          </h2>
+          <button id="thirdbtn" class="hover:bg-gray-600 rounded-xl dropdown">
+            <img src="./assets/icons8-arrow-down-30.png" alt="" />
+          </button>
+        </div>
+        <div id="ans2"></div>
       </div>
+
       <div
-        class="selectingtext mt-5 rounded-[10px] h-fit bg-gray-200 px-5 py-2 gap-y-2 w-9/14 flex items-center justify-between"
+        class="mt-5 rounded-[10px] h-fit bg-gray-200 px-5 py-2 gap-y-2 w-9/14"
       >
-        <h2 class="flex items-center justify-between font-bold">
-          3.Do I need to create an account?
-        </h2>
-        <button id="" class="hover:bg-gray-600 rounded-xl dropdown">
-          <img src="./assets/icons8-arrow-down-30.png" alt="" />
-        </button>
+        <div id="" class="selectingtext flex items-center justify-between">
+          <h2 class="flex items-center justify-between font-bold">
+            4.How can I build my English vocabulary?
+          </h2>
+          <button id="fourthbtn" class="hover:bg-gray-600 rounded-xl dropdown">
+            <img src="./assets/icons8-arrow-down-30.png" alt="" />
+          </button>
+        </div>
+        <div id="ans3"></div>
       </div>
+
       <div
-        class="selectingtext mt-5 rounded-[10px] h-fit bg-gray-200 px-5 py-2 gap-y-2 w-9/14 flex items-center justify-between"
+        class="mt-5 rounded-[10px] h-fit bg-gray-200 px-5 py-2 gap-y-2 w-9/14"
       >
-        <h2 class="flex items-center justify-between font-bold">
-          4.How can I build my English vocabulary?
-        </h2>
-        <button id="" class="hover:bg-gray-600 rounded-xl dropdown">
-          <img src="./assets/icons8-arrow-down-30.png" alt="" />
-        </button>
-      </div>
-      <div
-        class="selectingtext mt-5 rounded-[10px] h-fit bg-gray-200 px-5 py-2 gap-y-2 w-9/14 flex items-center justify-between"
-      >
-        <h2 class="flex items-center justify-between font-bold">
-          5.Do you offer certificates for completed courses?
-        </h2>
-        <button id="" class="hover:bg-gray-600 rounded-xl dropdown">
-          <img src="./assets/icons8-arrow-down-30.png" alt="" />
-        </button>
+        <div id="" class="selectingtext flex items-center justify-between">
+          <h2 class="flex items-center justify-between font-bold">
+            5.Do you offer certificates for completed courses?
+          </h2>
+          <button id="fifthbtn" class="hover:bg-gray-600 rounded-xl dropdown">
+            <img src="./assets/icons8-arrow-down-30.png" alt="" />
+          </button>
+        </div>
+        <div id="ans4"></div>
       </div>
     </div>
     <footer
       id="footer"
       class="hidden h-[200px] bg-gray-200 mt-[200px] flex items-center justify-between px-[20px] md:px-[200px]"
     >
-    
       <div>
         <h2 class="font-semibold text-[24px] w-9/11 md:w-11/11 text-gray-900">
           Build and Deployed by Afik
@@ -248,7 +281,7 @@
           <img src="./assets/fb-thumb.png" alt="" />
           <img src="./assets/instagram-thumb.png" alt="" />
           <img src="./assets/youtube-thumb.png" alt="" />
-          <img src="./assets/github-thumb.png" alt="">
+          <img src="./assets/github-thumb.png" alt="" />
         </div>
       </div>
     </footer>
