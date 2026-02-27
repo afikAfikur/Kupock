@@ -16,6 +16,9 @@ document.getElementById("login").addEventListener("click", () => {
   const footer = document.getElementById("footer");
   footer.classList.remove("hidden");
   document.getElementById("ekhono").classList.remove("hidden");
+  const learnsec = document.getElementById("thirdsec");
+  learnsec.scrollIntoView({ behavior: "smooth" });
+  document.getElementById('formlog').classList.add('hidden')
 });
 document.getElementById("logout").addEventListener("click", () => {
   const login = document.getElementById("login");
@@ -34,6 +37,7 @@ document.getElementById("logout").addEventListener("click", () => {
   footer.classList.add("hidden");
   document.getElementById("cardsec").classList.add("hidden");
     document.getElementById('searchbar').classList.add('hidden')
+    document.getElementById('formlog').classList.remove('hidden')
 });
 document.getElementById("faq").addEventListener("click", () => {
   const faqSection = document.getElementById("fourth");
