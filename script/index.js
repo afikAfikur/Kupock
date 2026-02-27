@@ -33,6 +33,7 @@ document.getElementById("logout").addEventListener("click", () => {
   const footer = document.getElementById("footer");
   footer.classList.add("hidden");
   document.getElementById("cardsec").classList.add("hidden");
+    document.getElementById('searchbar').classList.add('hidden')
 });
 document.getElementById("faq").addEventListener("click", () => {
   const faqSection = document.getElementById("fourth");
@@ -83,6 +84,7 @@ document.getElementById("level1").addEventListener("click", () => {
     .classList.add("bg-blue-200");
   const cardsec = document.getElementById("cardsec");
   cardsec.classList.remove("hidden");
+  document.getElementById('searchbar').classList.remove('hidden')
   load(1);
 });
 document.getElementById("level2").addEventListener("click", () => {
@@ -319,3 +321,16 @@ const worddetails = (data) => {
   const modal = diolog.querySelector("#my_modal");
   modal.show();
 };
+document.getElementById('searchw').addEventListener('keyup',(element)=>{
+const value=element.target.value;
+searcha(value)
+})
+const searcha=async(value="")=>{
+  const res=await fetch(`https://openapi.programming-hero.com/api/words/all`)
+  const data=await res.json();
+    const filtered = data.data.filter((wordObj) =>
+    wordObj.word.toLowerCase().includes(value.toLowerCase())
+  );
+
+  makingcard(filtered);
+}
